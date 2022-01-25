@@ -1,0 +1,15 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_rv_plague"
+		texturefile = "gfx/interface/ideas_EU4/rv_plague.dds"
+	}
+	spriteType = {
+		name = "GFX_rv_famine"
+		texturefile = "gfx/interface/ideas_EU4/rv_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_rv_plague_recent"
+		texturefile = "gfx/interface/ideas_EU4/rv_famine.dds"
+	}
+}

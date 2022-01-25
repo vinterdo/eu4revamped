@@ -1,0 +1,21 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "CITY_DEVELOPMENT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/CITY_DEVELOPMENT_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "PLAGUE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/PLAGUE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FAMINE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/FAMINE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	
+}

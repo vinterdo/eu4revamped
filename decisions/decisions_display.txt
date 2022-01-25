@@ -1,0 +1,58 @@
+country_decisions = {
+	DevelopmentDisplayOn = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = development_display_on
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = development_display_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	DevelopmentDisplayOff = {
+		major = yes
+		potential = {
+			has_country_flag = development_display_on
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = development_display_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	DevelopmentSummary = {
+		major = yes
+		potential = {
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = development_summary.tax
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = development_summary.production
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = development_summary.manpower
+				always = yes
+			}
+		}
+		effect = {
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

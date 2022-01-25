@@ -1,0 +1,8 @@
+﻿l_english:
+ famine: "Famine"
+ desc_famine: "Violent conflict in this province has led to an outbreak of famine, which is now negatively affecting the local population. Famines hasten the spread of plague from adjacent provinces."
+ plague: "Plague"
+ desc_plague: "A sudden outbreak of plague has occurred in this province, causing great strife to the local population. Plagues can spread to adjacent provinces, and their spread is hastened by devastation and famine."
+ plague.spawn.t: "Plague outbreak"
+ plague.spawn.d: "Ayyyyy Corona!"
+ plague.spawn.a: "I should better buy some toilet paper"

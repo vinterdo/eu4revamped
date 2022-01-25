@@ -1,0 +1,21 @@
+rv_famine = {
+	local_monthly_devastation = 0.5
+	trade_goods_size_modifier = -0.25
+	local_manpower_modifier = -0.25
+	local_tax_modifier = -0.25
+	trade_goods_size = 0.001
+	picture = "rv_famine"
+}
+
+rv_plague = {
+	local_monthly_devastation = 1
+	province_trade_power_modifier = -0.25
+	local_manpower_modifier = -0.25
+	local_tax_modifier = -0.25
+	trade_goods_size = 0.001
+	picture = "rv_plague"
+}
+
+rv_recent_plague = {
+	picture = "rv_plague_recent"
+}

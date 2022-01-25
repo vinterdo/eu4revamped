@@ -1,0 +1,4579 @@
+namespace = development
+
+# Farmlands (Base Tax)
+province_event = {
+	id = development.1
+	title = development.1.t
+	desc = development.1.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = farmlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.1.a
+	}
+}
+
+# Farmlands (Base Production)
+province_event = {
+	id = development.2
+	title = development.2.t
+	desc = development.2.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = farmlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.2.a
+	}
+}
+
+# Farmlands (Base Manpower)
+province_event = {
+	id = development.3
+	title = development.3.t
+	desc = development.3.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = farmlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.3.a
+	}
+}
+
+# Grasslands (Base Tax)
+province_event = {
+	id = development.4
+	title = development.4.t
+	desc = development.4.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = grasslands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.4.a
+	}
+}
+
+# Grasslands (Base Production)
+province_event = {
+	id = development.5
+	title = development.5.t
+	desc = development.5.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = grasslands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.5.a
+	}
+}
+
+# Grasslands (Base Manpower)
+province_event = {
+	id = development.6
+	title = development.6.t
+	desc = development.6.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = grasslands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.6.a
+	}
+}
+
+# Drylands (Base Tax)
+province_event = {
+	id = development.7
+	title = development.7.t
+	desc = development.7.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = drylands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.7.a
+	}
+}
+
+# Drylands (Base Production)
+province_event = {
+	id = development.8
+	title = development.8.t
+	desc = development.8.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = drylands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.8.a
+	}
+}
+
+# Drylands (Base Manpower)
+province_event = {
+	id = development.9
+	title = development.9.t
+	desc = development.9.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = drylands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.9.a
+	}
+}
+
+# Woods (Base Tax)
+province_event = {
+	id = development.10
+	title = development.10.t
+	desc = development.10.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = woods
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.10.a
+	}
+}
+
+# Woods (Base Production)
+province_event = {
+	id = development.11
+	title = development.11.t
+	desc = development.11.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = woods
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.11.a
+	}
+}
+
+# Woods (Base Manpower)
+province_event = {
+	id = development.12
+	title = development.12.t
+	desc = development.12.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = woods
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.12.a
+	}
+}
+
+# Coastline (Base Tax)
+province_event = {
+	id = development.13
+	title = development.13.t
+	desc = development.13.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastline
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.13.a
+	}
+}
+
+# Coastline (Base Production)
+province_event = {
+	id = development.14
+	title = development.14.t
+	desc = development.14.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastline
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.14.a
+	}
+}
+
+# Coastline (Base Manpower)
+province_event = {
+	id = development.15
+	title = development.15.t
+	desc = development.15.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastline
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.15.a
+	}
+}
+
+# Savannah (Base Tax)
+province_event = {
+	id = development.16
+	title = development.16.t
+	desc = development.16.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = savannah
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.16.a
+	}
+}
+
+# Savannah (Base Production)
+province_event = {
+	id = development.17
+	title = development.17.t
+	desc = development.17.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = savannah
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.17.a
+	}
+}
+
+# Savannah (Base Manpower)
+province_event = {
+	id = development.18
+	title = development.18.t
+	desc = development.18.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = savannah
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.18.a
+	}
+}
+
+# Highlands (Base Tax)
+province_event = {
+	id = development.19
+	title = development.19.t
+	desc = development.19.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = highlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.19.a
+	}
+}
+
+# Highlands (Base Production)
+province_event = {
+	id = development.20
+	title = development.20.t
+	desc = development.20.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = highlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.20.a
+	}
+}
+
+# Highlands (Base Manpower)
+province_event = {
+	id = development.21
+	title = development.21.t
+	desc = development.21.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = highlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.21.a
+	}
+}
+
+# Forest (Base Tax)
+province_event = {
+	id = development.22
+	title = development.22.t
+	desc = development.22.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = forest
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.22.a
+	}
+}
+
+# Forest (Base Production)
+province_event = {
+	id = development.23
+	title = development.23.t
+	desc = development.23.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = forest
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.23.a
+	}
+}
+
+# Forest (Base Manpower)
+province_event = {
+	id = development.24
+	title = development.24.t
+	desc = development.24.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = forest
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.24.a
+	}
+}
+
+# Steppe (Base Tax)
+province_event = {
+	id = development.25
+	title = development.25.t
+	desc = development.25.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = steppe
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.25.a
+	}
+}
+
+# Steppe (Base Production)
+province_event = {
+	id = development.26
+	title = development.26.t
+	desc = development.26.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = steppe
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.26.a
+	}
+}
+
+# Steppe (Base Manpower)
+province_event = {
+	id = development.27
+	title = development.27.t
+	desc = development.27.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = steppe
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.27.a
+	}
+}
+
+# Hills (Base Tax)
+province_event = {
+	id = development.28
+	title = development.28.t
+	desc = development.28.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = hills
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.28.a
+	}
+}
+
+# Hills (Base Production)
+province_event = {
+	id = development.29
+	title = development.29.t
+	desc = development.29.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = hills
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.29.a
+	}
+}
+
+# Hills (Base Manpower)
+province_event = {
+	id = development.30
+	title = development.30.t
+	desc = development.30.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = hills
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.30.a
+	}
+}
+
+# Marsh (Base Tax)
+province_event = {
+	id = development.31
+	title = development.31.t
+	desc = development.31.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = marsh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.31.a
+	}
+}
+
+# Marsh (Base Production)
+province_event = {
+	id = development.32
+	title = development.32.t
+	desc = development.32.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = marsh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.32.a
+	}
+}
+
+# Marsh (Base Manpower)
+province_event = {
+	id = development.33
+	title = development.33.t
+	desc = development.33.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = marsh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.33.a
+	}
+}
+
+# Mountain (Base Tax)
+province_event = {
+	id = development.34
+	title = development.34.t
+	desc = development.34.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = mountain
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.34.a
+	}
+}
+
+# Mountain (Base Production)
+province_event = {
+	id = development.35
+	title = development.35.t
+	desc = development.35.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = mountain
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.35.a
+	}
+}
+
+# Mountain (Base Manpower)
+province_event = {
+	id = development.36
+	title = development.36.t
+	desc = development.36.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = mountain
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2700
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.36.a
+	}
+}
+
+# Jungle (Base Tax)
+province_event = {
+	id = development.37
+	title = development.37.t
+	desc = development.37.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = jungle
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.37.a
+	}
+}
+
+# Jungle (Base Production)
+province_event = {
+	id = development.38
+	title = development.38.t
+	desc = development.38.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = jungle
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.38.a
+	}
+}
+
+# Jungle (Base Manpower)
+province_event = {
+	id = development.39
+	title = development.39.t
+	desc = development.39.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = jungle
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.39.a
+	}
+}
+
+# Coastal Desert (Base Tax)
+province_event = {
+	id = development.40
+	title = development.40.t
+	desc = development.40.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastal_desert
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_tax = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.40.a
+	}
+}
+
+# Coastal Desert (Base Production)
+province_event = {
+	id = development.41
+	title = development.41.t
+	desc = development.41.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastal_desert
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_production
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = workshop
+				has_building = counting_house
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_production = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.41.a
+	}
+}
+
+# Coastal Desert (Base Manpower)
+province_event = {
+	id = development.42
+	title = development.42.t
+	desc = development.42.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		OR = {
+			has_terrain = coastal_desert
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4800
+		modifier = {
+			factor = 0.5
+			has_province_modifier = encouraged_growth_manpower
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.95
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 1
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 2
+			}
+		}
+		modifier = {
+			factor = 0.95
+			is_capital = yes
+			owner = {
+				government_rank = 3
+			}
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.42.a
+	}
+}

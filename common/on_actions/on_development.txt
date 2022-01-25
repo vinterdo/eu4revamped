@@ -1,0 +1,35 @@
+
+# province
+on_adm_development = {
+	FROM = {
+		add_base_tax = -1
+		add_province_modifier = {
+			name = encouraged_growth_tax
+			duration = 9125
+		}
+	}
+}
+
+# province
+on_dip_development = {
+	if = {
+		FROM = {
+			add_base_production = -1
+			add_province_modifier = {
+				name = encouraged_growth_production
+				duration = 9125
+			}
+		}
+	}
+}
+
+# province
+on_mil_development = {
+	FROM = {
+		add_base_manpower = -1
+		add_province_modifier = {
+			name = encouraged_growth_manpower
+			duration = 9125
+		}
+	}
+}

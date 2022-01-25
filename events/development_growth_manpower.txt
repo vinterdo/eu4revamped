@@ -1,0 +1,160 @@
+namespace = development
+
+# Tax
+province_event = {
+	id = development.manpower_growth
+	title = development.manpower_growth.t
+	desc = development.manpower_growth.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 0.25
+			has_province_modifier = encouraged_growth_tax
+		}
+		modifier = {
+			is_prosperous = yes
+			factor = 0.75
+		}
+		modifier = {
+			factor = 0.90
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.90
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.90
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.95
+			development = 10
+		}
+		modifier = {
+			factor = 0.95
+			development = 20
+		}
+		modifier = {
+			factor = 0.95
+			development = 30
+		}
+		modifier = {
+			factor = 0.95
+			development = 40
+		}
+		modifier = {
+			factor = 0.95
+			development = 50
+		}
+		modifier = {
+			factor = 10
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.90
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+		# modifier = {
+		# 	has_terrain = farmlands
+		# 	factor = 2
+		# }
+		modifier = {
+			has_terrain = grasslands
+			factor = 1.2
+		}
+		modifier = {
+			has_terrain = drylands
+			factor = 1.5
+		}
+		modifier = {
+			has_terrain = woods
+			factor = 1.5
+		}
+		modifier = {
+			has_terrain = coastline
+			factor = 1.5
+		}
+		modifier = {
+			has_terrain = savannah
+			factor = 1.8
+		}
+		modifier = {
+			has_terrain = highlands
+			factor = 1.8
+		}
+		modifier = {
+			has_terrain = forest
+			factor = 1.8
+		}
+		modifier = {
+			has_terrain = steppe
+			factor = 2.5
+		}
+		modifier = {
+			has_terrain = hills
+			factor = 2.5
+		}
+		modifier = {
+			has_terrain = marsh
+			factor = 2.5
+		}
+		modifier = {
+			has_terrain = mountain
+			factor = 4
+		}
+		modifier = {
+			has_terrain = jungle
+			factor = 4
+		}
+		modifier = {
+			has_terrain = coastal_desert
+			factor = 5
+		}
+		modifier = {
+			has_terrain = glacial
+			factor = 10
+		}
+		modifier = {
+			has_terrain = desert
+			factor = 10
+		}
+	}
+	
+	immediate = {
+		add_base_manpower = 1
+		owner = {
+			change_variable = {
+				which = development_growth_manpower
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.growth_manpower
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = development.manpower_growth.a
+	}
+}

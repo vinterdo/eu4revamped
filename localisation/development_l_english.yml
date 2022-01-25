@@ -1,0 +1,60 @@
+﻿l_english:
+ encouraged_growth_tax: "Encouraged Growth (Tax)"
+ desc_encouraged_growth_tax: "This province is currently receiving administrative investment, and consequently has an increased rate of population growth."
+ encouraged_growth_production: "Encouraged Growth (Production)"
+ desc_encouraged_growth_production: "This province is currently receiving productive investment, and consequently has an increased rate of population growth."
+ encouraged_growth_manpower: "Encouraged Growth (Manpower)"
+ desc_encouraged_growth_manpower: "This province is currently receiving military investment, and consequently has an increased rate of population growth."
+ 
+ development_display.1.t: "Growth in [From.GetName]"
+ development_display.1.d: "The province of [From.GetName] has recently experienced administrative growth, increasing its population and output. We hope that this trend will continue in the future."
+ development_display.1.a: "Good to hear."
+ development_display.2.t: "Growth in [From.GetName]"
+ development_display.2.d: "The province of [From.GetName] has recently experienced productive growth, increasing its population and output. We hope that this trend will continue in the future."
+ development_display.2.a: "Good to hear."
+ development_display.3.t: "Growth in [From.GetName]"
+ development_display.3.d: "The province of [From.GetName] has recently experienced military growth, increasing its production and output. We hope that this trend will continue in the future."
+ development_display.3.a: "Good to hear."
+ 
+ development_display.4.t: "Decline in [From.GetName]"
+ development_display.4.d: "The province of [From.GetName] has recently experienced administrative decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area."
+ development_display.4.a: "This is unfortunate news."
+ development_display.5.t: "Decline in [From.GetName]"
+ development_display.5.d: "The province of [From.GetName] has recently experienced productive decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area."
+ development_display.5.a: "This is unfortunate news."
+ development_display.6.t: "Decline in [From.GetName]"
+ development_display.6.d: "The province of [From.GetName] has recently experienced military decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area."
+ development_display.6.a: "This is unfortunate news."
+ 
+ development_display.7.t: "Old World Diseases"
+ development_display.7.d: "A strange new affliction has appeared amongst the inhabitants of [From.GetName]. Countless people have fallen ill, experiencing brutal fits of coughing while developing rashes and sores all over their bodies. We are not sure what to make of the crisis, and yet it seems certain that thousands will die."
+ development_display.7.a: "Have mercy upon us all!"
+ 
+ development_display.8.t: "Refugees from [From.GetName]"
+ development_display.8.d: "The province of [From.GetName] has recently experienced administrative decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area.\n\nUnable to find safe haven in their own country, the people of [From.GetName] have come to us, hoping to find a new home in our lands."
+ development_display.8.a: "They are welcome to stay."
+ development_display.9.t: "Refugees from [From.GetName]"
+ development_display.9.d: "The province of [From.GetName] has recently experienced productive decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area.\n\nUnable to find safe haven in their own country, the people of [From.GetName] have come to us, hoping to find a new home in our lands."
+ development_display.9.a: "They are welcome to stay."
+ development_display.10.t: "Refugees from [From.GetName]"
+ development_display.10.d: "The province of [From.GetName] has recently experienced military decline, decreasing its population and output. The people of the province are suffering as a result of high devastation in the area.\n\nUnable to find safe haven in their own country, the people of [From.GetName] have come to us, hoping to find a new home in our lands."
+ development_display.10.a: "They are welcome to stay."
+ 
+ devastated_province: "Provincial Devastation"
+ desc_devastated_province: "This province has been devastated after a prolonged period of war, disease, or famine. During the time that this modifier lasts, it will not lose any more development."
+ 
+ 
+ CANNOT_MANUALLY_IMPROVE_BASE_TAX: "You cannot manually §YImprove Base Tax§! in a province that has the modifier §YEncouraged Growth (Tax)§!."
+ CANNOT_MANUALLY_IMPROVE_BASE_PRODUCTION: "You cannot manually §YImprove Base Production§! in a province that has the modifier §YEncouraged Growth (Production)§!."
+ CANNOT_MANUALLY_IMPROVE_BASE_MANPOWER: "You cannot manually §YImprove Base Manpower§! in a province that has the modifier §YEncouraged Growth (Manpower)§!."
+ CANNOT_IMPROVE_TERRAIN: "You cannot Encourage Growth on a province with the Desert or Glacial Terrain."
+ 
+ 
+ DevelopmentDisplayOn_title: "Receive Development Notifications"
+ DevelopmentDisplayOn_desc: "You will receive events notifying when development naturally grows or declines in your provinces. You can turn this off if you receive too many notifications."
+ DevelopmentDisplayOff_title: "Stop Development Notifications"
+ DevelopmentDisplayOff_desc: "You will stop receiving events notifying when development naturally grows or declines in your provinces. You can turn this back on again if you wish to receive notifications."
+ 
+ development_summary.tax:0 "§YTax§! grown by: [Root.development_growth_tax.GetValue]"
+ development_summary.production:0 "§YProduction§! grown by: [Root.development_growth_production.GetValue]"
+ development_summary.manpower:0 "§YManpower§! grown by: [Root.development_growth_manpower.GetValue]"

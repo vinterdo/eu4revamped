@@ -1,0 +1,75 @@
+
+can_improve_tax = {
+	condition = {
+		tooltip = "CANNOT_MANUALLY_IMPROVE_BASE_TAX"
+		potential = {
+			owned_by = ROOT
+		}
+		allow = {
+			NOT = {
+				has_province_modifier = encouraged_growth_tax
+			}
+		}
+	}
+	condition = {
+		tooltip = "CANNOT_IMPROVE_TERRAIN"
+		potential = {
+			OR = {
+				has_terrain = desert
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_improve_production = {
+	condition = {
+		tooltip = "CANNOT_MANUALLY_IMPROVE_BASE_PRODUCTION"
+		potential = {
+			owned_by = ROOT
+		}
+		allow = {
+			NOT = {
+				has_province_modifier = encouraged_growth_production
+			}
+		}
+	}
+	condition = {
+		tooltip = "CANNOT_IMPROVE_TERRAIN"
+		potential = {
+			OR = {
+				has_terrain = desert
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_improve_manpower = {
+	condition = {
+		tooltip = "CANNOT_MANUALLY_IMPROVE_BASE_MANPOWER"
+		potential = {
+			owned_by = ROOT
+		}
+		allow = {
+			NOT = {
+				has_province_modifier = encouraged_growth_manpower
+			}
+		}
+	}
+	condition = {
+		tooltip = "CANNOT_IMPROVE_TERRAIN"
+		potential = {
+			OR = {
+				has_terrain = desert
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}

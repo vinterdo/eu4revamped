@@ -1,0 +1,149 @@
+namespace = plague
+
+# Spawn plague
+province_event = {
+	id = plague.spawn
+	title = plague.spawn.t
+	desc = plague.spawn.d
+	picture = PLAGUE_eventPicture
+	goto = root
+	
+	trigger = {
+		NOT = {
+			has_province_modifier = rv_plague
+			has_province_modifier = rv_recent_plague
+		}
+		devastation = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 3000
+		modifier = {
+			factor = 0.80
+			devastation = 15
+		}
+		modifier = {
+			factor = 0.80
+			devastation = 20
+		}
+		modifier = {
+			factor = 0.70
+			devastation = 30
+		}
+		modifier = {
+			factor = 0.40
+			devastation = 40
+		}
+		modifier = {
+			factor = 0.10
+			devastation = 50
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.9
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			province_has_center_of_trade_of_level = 3
+		}
+	}
+	
+	immediate = {
+		add_permanent_province_modifier = {
+			name = rv_plague
+			duration = 730
+		}
+		hidden_effect = {
+			add_permanent_province_modifier = {
+				name = rv_recent_plague
+				duration = 3650 # no more plague for 10 years
+			}
+		}
+	}
+	
+	option = { # This could be disastrous.
+		name = plague.spawn.a
+	}
+}
+
+# Spread of Plague
+province_event = {
+	id = plague.spread
+	title = plague.spread.t
+	desc = plague.spread.d
+	picture = PLAGUE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			has_province_modifier = rv_plague
+			has_province_modifier = rv_recent_plague
+		}
+		any_neighbor_province = {
+			has_province_modifier = rv_plague
+			devastation = 10
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.3
+			devastation = 1
+		}
+		modifier = {
+			factor = 0.3
+			devastation = 5
+		}
+		modifier = {
+			factor = 0.3
+			devastation = 10
+		}
+		modifier = {
+			factor = 0.3
+			devastation = 20
+		}
+		modifier = {
+			factor = 0.3
+			devastation = 30
+		}
+		modifier = {
+			factor = 0.8
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.8
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.8
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 0.5
+			has_province_modifier = rv_famine
+		}
+	}
+	
+	immediate = {
+		add_permanent_province_modifier = {
+			name = rv_plague
+			duration = 730
+		}
+		hidden_effect = {
+			add_permanent_province_modifier = {
+				name = rv_recent_plague
+				duration = 3650 # no more plague for 10 years
+			}
+		}
+	}
+	
+	option = {
+		name = plague.spread.a
+	}
+}

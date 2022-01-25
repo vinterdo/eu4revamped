@@ -1,0 +1,474 @@
+
+# Development Loss (Tax)
+province_event = {
+	id = development.43
+	title = development.43.t
+	desc = development.43.d
+	picture = FAMINE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		devastation = 20
+		base_tax = 2
+		NOT = {
+			has_province_modifier = devastated_province
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		random_list = {
+			50 = {
+			}
+			40 = {
+				if = {
+					limit = {
+						owner = {
+							any_owned_province = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+							add_base_tax = 1
+							if = {
+								limit = {
+									owner = {
+										has_country_flag = development_display_on
+									}
+								}
+								set_province_flag = tax_refugee_recipient
+							}
+						}
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						owner = {
+							any_neighbor_country = {
+								NOT = {
+									war_with = PREV
+								}
+								any_owned_province = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_neighbor_country = {
+							limit = {
+								NOT = {
+									war_with = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+								add_base_tax = 1
+								if = {
+									limit = {
+										owner = {
+											has_country_flag = development_display_on
+										}
+									}
+									set_province_flag = international_tax_refugee_recipient
+									owner = {
+										country_event = {
+											id = development_display.8
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.4
+				}
+			}
+		}
+		if = {
+			random = {
+				chance = 0
+				add_permanent_province_modifier = {
+					name = devastated_province
+					duration = 3650
+				}
+			}
+		}
+		add_base_tax = -1
+		add_devastation = -10
+	}
+	
+	option = {
+		name = development.43.a
+	}
+}
+
+# Development Loss (Production)
+province_event = {
+	id = development.44
+	title = development.44.t
+	desc = development.44.d
+	picture = FAMINE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		devastation = 20
+		base_production = 2
+		NOT = {
+			has_province_modifier = devastated_province
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		random_list = {
+			50 = {
+			}
+			40 = {
+				if = {
+					limit = {
+						owner = {
+							any_owned_province = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+							add_base_production = 1
+							if = {
+								limit = {
+									owner = {
+										has_country_flag = development_display_on
+									}
+								}
+								set_province_flag = production_refugee_recipient
+							}
+						}
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						owner = {
+							any_neighbor_country = {
+								NOT = {
+									war_with = PREV
+								}
+								any_owned_province = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_neighbor_country = {
+							limit = {
+								NOT = {
+									war_with = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+								add_base_production = 1
+								if = {
+									limit = {
+										owner = {
+											has_country_flag = development_display_on
+										}
+									}
+									set_province_flag = international_production_refugee_recipient
+									owner = {
+										country_event = {
+											id = development_display.9
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.5
+				}
+			}
+		}
+		if = {
+			random = {
+				chance = 0
+				add_permanent_province_modifier = {
+					name = devastated_province
+					duration = 3650
+				}
+			}
+		}
+		add_base_production = -1
+		add_devastation = -10
+	}
+	
+	option = {
+		name = development.44.a
+	}
+}
+
+# Development Loss (Manpower)
+province_event = {
+	id = development.45
+	title = development.45.t
+	desc = development.45.d
+	picture = FAMINE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_city = yes
+		devastation = 20
+		base_manpower = 2
+		NOT = {
+			has_province_modifier = devastated_province
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		random_list = {
+			50 = {
+			}
+			40 = {
+				if = {
+					limit = {
+						owner = {
+							any_owned_province = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								religion = ROOT
+								culture_group = ROOT
+								NOT = {
+									devastation = 20
+									province_distance = {
+										who = ROOT
+										distance = 125
+									}
+								}
+							}
+							add_base_manpower = 1
+							if = {
+								limit = {
+									owner = {
+										has_country_flag = development_display_on
+									}
+								}
+								set_province_flag = manpower_refugee_recipient
+							}
+						}
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						owner = {
+							any_neighbor_country = {
+								NOT = {
+									war_with = PREV
+								}
+								any_owned_province = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+							}
+						}
+					}
+					owner = {
+						random_neighbor_country = {
+							limit = {
+								NOT = {
+									war_with = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									religion = ROOT
+									NOT = {
+										devastation = 20
+										province_distance = {
+											who = ROOT
+											distance = 250
+										}
+									}
+								}
+								add_base_manpower = 1
+								if = {
+									limit = {
+										owner = {
+											has_country_flag = development_display_on
+										}
+									}
+									set_province_flag = international_manpower_refugee_recipient
+									owner = {
+										country_event = {
+											id = development_display.10
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = development_display_on
+				}
+			}
+			owner = {
+				country_event = {
+					id = development_display.6
+				}
+			}
+		}
+		if = {
+			random = {
+				chance = 0
+				add_permanent_province_modifier = {
+					name = devastated_province
+					duration = 3650
+				}
+			}
+		}
+		add_base_manpower = -1
+		add_devastation = -10
+	}
+	
+	option = {
+		name = development.45.a
+	}
+}
