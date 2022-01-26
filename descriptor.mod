@@ -8,4 +8,4 @@ tags={
 }
 name="EU4 Revamped"
 supported_version="1.32.*"
-path="mod/eu4revamped"
+path="mod/eu4revamped-religion-rework"
