@@ -25,11 +25,11 @@ christian = {
 		}
 		country = {
 			tolerance_own = 1
-			global_heathen_missionary_strength = 0.01
+			diplomatic_reputation = 1
 		}
 		
 		country_as_secondary = {
-			diplomatic_reputation = 1
+			global_missionary_strength = 0.02
 			advisor_pool = 1
 		}
 		
@@ -60,61 +60,64 @@ christian = {
 			
 			#Council of Trent Positions
 			harsh = {
-				relation_with_heretics = -10
-				global_religious_conversion_resistance = 0.25
-				global_institution_spread = -0.25
-				global_missionary_strength = 0.02
+				relation_with_heretics = -25
+				global_religious_conversion_resistance = 0.33
+				global_institution_spread = -0.10
+				global_missionary_strength = 0.03
+				tolerance_own = 1
 			}
 			neutral = {
 				global_religious_conversion_resistance = -0.33
+				prestige = -0.5
 			}
 			concilatory = {
-				relation_with_heretics = 5
-				global_religious_conversion_resistance = 0.25
+				relation_with_heretics = 15
+				global_religious_conversion_resistance = 0.33
 				global_heretic_missionary_strength = -0.05
 				improve_relation_modifier = 0.25
+				tolerance_heretic = 2
 			}
 			
 			#Council of Trent Concessions
 			concessions = {
 				first_concession = {
 					harsh = {
-						relation_with_heretics = -10
+						relation_with_heretics = -5
 						global_heretic_missionary_strength  = 0.02
 					}	
 					concilatory = {
 						relation_with_heretics = 5
-						tolerance_heretic = 2
+						curia_powers_cost = -0.10
 					}
 				}
 				second_concession = {
 					harsh = {
-						relation_with_heretics = -10
+						relation_with_heretics = -5
 						institution_spread_from_true_faith = 0.30
 					}	
 					concilatory = {
 						relation_with_heretics = 5
-						global_institution_spread = 0.10
+						global_institution_spread = 0.15
 					}
 				}
 				third_concession = {
 					harsh = {
-						relation_with_heretics = -10
-						manpower_in_true_faith_provinces  = 0.1
+						relation_with_heretics = -5
+						manpower_in_true_faith_provinces  = 0.15
 					}	
 					concilatory = {
 						relation_with_heretics = 5
-						global_manpower_modifier = 0.05
+						global_manpower_modifier = 0.1
 					}
 				}
 				fourth_concession = {
 					harsh = {
-						relation_with_heretics = -10
+						relation_with_heretics = -5
 						warscore_cost_vs_other_religion  = -0.10
 					}	
 					concilatory = {
 						relation_with_heretics = 5
-						curia_powers_cost = -0.10
+						ae_impact = -0.15
 					}
 				}
 			}
@@ -323,7 +326,7 @@ christian = {
 		}
 		country = {
 			development_cost = -0.1
-			innovativeness_gain = 0.5
+			all_power_cost = -0.05
 		}
 		
 		country_as_secondary = {
@@ -531,13 +534,13 @@ christian = {
 			catholic
 		}
 		country = {
-			tolerance_heretic = 2
-			advisor_pool = 1
+			idea_cost = -0.1
+			advisor_cost = -0.15
 		}
 		
 		country_as_secondary = {
 			global_unrest = -1
-			advisor_cost = -0.1
+			advisor_pool = 1
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -684,7 +687,7 @@ christian = {
 			}
 
 			icon_eleusa = {
-				global_unrest = -3
+				global_unrest = -2
 				harsh_treatment_cost = -0.25
 				
 				allow = {

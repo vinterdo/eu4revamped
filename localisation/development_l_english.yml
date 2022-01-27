@@ -58,3 +58,7 @@
  development_summary.tax:0 "§YTax§! grown by: [Root.development_growth_tax.GetValue]"
  development_summary.production:0 "§YProduction§! grown by: [Root.development_growth_production.GetValue]"
  development_summary.manpower:0 "§YManpower§! grown by: [Root.development_growth_manpower.GetValue]"
+
+
+ DevelopmentSummary_title: "Amount of development grown"
+ DevelopmentSummary_desc: "Amount of development grown naturally"
