@@ -358,7 +358,7 @@ christian = {
 		}
 		country = {
 			shock_damage_received = -0.05
-			global_heretic_missionary_strength = 0.02
+			land_morale = 0.1
 		}
 		
 		country_as_secondary = {
@@ -535,7 +535,7 @@ christian = {
 		}
 		country = {
 			idea_cost = -0.1
-			advisor_cost = -0.15
+			advisor_cost = -0.10
 		}
 		
 		country_as_secondary = {
@@ -688,7 +688,7 @@ christian = {
 
 			icon_eleusa = {
 				global_unrest = -2
-				harsh_treatment_cost = -0.25
+				harsh_treatment_cost = -0.2
 				
 				allow = {
 					always = yes

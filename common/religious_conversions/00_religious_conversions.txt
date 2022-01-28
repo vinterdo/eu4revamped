@@ -240,12 +240,12 @@ hussite_center_of_reformation = {
 anglican_center_of_reformation = {
 	
 	religion = anglican
-
+	
 	map_icon = GFX_religious_conversion_center_protestant
-
+	
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2
-
+	
 	target_province_weights = {
 		factor = 2
 		
@@ -342,7 +342,7 @@ anglican_center_of_reformation = {
 		modifier = {
 			factor = 0
 			religion = coptic
-		}		
+		}
 		modifier = {
 			factor = 0
 			religion = orthodox
@@ -355,20 +355,21 @@ anglican_center_of_reformation = {
 				culture = bavarian
 				culture = austrian
 			}
-		modifier = {
-			factor = 2
-			culture_group = british
-		}
-		modifier = {
-			factor = 0.5
-			has_state_edict = edict_religion_enforced
-		}
-		# HRE is more resistant to reformation when the Pope is an Imperial Prince
-		modifier = {
-			factor = 0.8
-			is_part_of_hre = yes
-			PAP = {
+			modifier = {
+				factor = 2
+				culture_group = british
+			}
+			modifier = {
+				factor = 0.5
+				has_state_edict = edict_religion_enforced
+			}
+			# HRE is more resistant to reformation when the Pope is an Imperial Prince
+			modifier = {
+				factor = 0.8
 				is_part_of_hre = yes
+				PAP = {
+					is_part_of_hre = yes
+				}
 			}
 		}
 	}
