@@ -5,6 +5,7 @@ tags={
     "Fixes"
     "Gameplay"
     "Military"
+    "Religion"
 }
 name="EU4 Revamped"
 supported_version="1.32.*"

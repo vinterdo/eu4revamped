@@ -145,11 +145,11 @@ hussite_center_of_reformation = {
 			has_province_modifier = religious_zeal_at_conv
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0
 			religion = reformed
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0
 			religion = protestant
 		}
 		modifier = {
@@ -165,19 +165,19 @@ hussite_center_of_reformation = {
 			NOT = { continent = FROM }
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 1
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 2
 			}
 		}
 		modifier = {
-			factor = 0.7
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 3
 			}
@@ -189,7 +189,7 @@ hussite_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 5
 			}
@@ -215,11 +215,11 @@ hussite_center_of_reformation = {
 			culture = FROM
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			religion = coptic
 		}		
 		modifier = {
-			factor = 0
+			factor = 0.01
 			religion = orthodox
 		}
 		modifier = {
@@ -228,7 +228,7 @@ hussite_center_of_reformation = {
 		}
 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			is_part_of_hre = yes
 			PAP = {
 				is_part_of_hre = yes
@@ -240,12 +240,12 @@ hussite_center_of_reformation = {
 anglican_center_of_reformation = {
 	
 	religion = anglican
-	
+
 	map_icon = GFX_religious_conversion_center_protestant
-	
+
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2
-	
+
 	target_province_weights = {
 		factor = 2
 		
@@ -270,11 +270,11 @@ anglican_center_of_reformation = {
 			has_province_modifier = religious_zeal_at_conv
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			religion = reformed
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			religion = protestant
 		}
 		modifier = {
@@ -286,19 +286,19 @@ anglican_center_of_reformation = {
 			NOT = { continent = FROM }
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 1
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 2
 			}
 		}
 		modifier = {
-			factor = 0.7
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 3
 			}
@@ -310,19 +310,19 @@ anglican_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.6
 			owner = {
 				num_of_cardinals = 5
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 2
 			owner = {
 				religion = anglican
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			religion = hussite
 		}
 		modifier = {
@@ -340,36 +340,23 @@ anglican_center_of_reformation = {
 			culture = FROM
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			religion = coptic
-		}
+		}		
 		modifier = {
-			factor = 0
+			factor = 0.01
 			religion = orthodox
 		}
 		modifier = {
-			factor = 0.1
-			OR = {
-				culture_group = latin
-				culture_group = iberian
-				culture = bavarian
-				culture = austrian
-			}
-			modifier = {
-				factor = 2
-				culture_group = british
-			}
-			modifier = {
-				factor = 0.5
-				has_state_edict = edict_religion_enforced
-			}
-			# HRE is more resistant to reformation when the Pope is an Imperial Prince
-			modifier = {
-				factor = 0.8
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
+		}
+		# HRE is more resistant to reformation when the Pope is an Imperial Prince
+		modifier = {
+			factor = 0.75
+			is_part_of_hre = yes
+			PAP = {
 				is_part_of_hre = yes
-				PAP = {
-					is_part_of_hre = yes
-				}
 			}
 		}
 	}
@@ -408,11 +395,11 @@ protestant_center_of_reformation = {
 			has_province_modifier = religious_zeal_at_conv
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			religion = reformed
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			religion = anglican
 		}
 		modifier = {
@@ -428,13 +415,13 @@ protestant_center_of_reformation = {
 			NOT = { continent = FROM }
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 1
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 2
 			}
@@ -446,19 +433,19 @@ protestant_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 4
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 5
 			}
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.5
 			owner = {
 				religion = protestant
 			}
@@ -480,47 +467,17 @@ protestant_center_of_reformation = {
 		modifier = {
 			factor = 0
 			religion = orthodox
-		}
-		modifier = {
-			factor = 0.1
-			OR = {
-				culture_group = latin
-				culture_group = iberian
-				culture = bavarian
-				culture = austrian
-			}
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				culture_group = east_slavic
-				culture_group = south_slavic
-			}
-		}
-		modifier = {
-			factor = 0.7
-			OR = {
-				culture_group = baltic
-				culture_group = british
-				culture_group = carpathian
-				culture_group = west_slavic
-				culture = occitan
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				culture = prussian
-				culture = saxon
-			}
-		}
-		modifier = {
-			factor = 2
-			is_part_of_hre = yes
-		}
+		}		
 		modifier = {
 			factor = 0.5
 			has_state_edict = edict_religion_enforced
+		}
+		modifier = {
+			factor = 0.01
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
 		}
 		# HRE is more resistant to reformation when the Pope is an Imperial Prince
 		modifier = {
@@ -566,15 +523,15 @@ reformed_center_of_reformation = {
 			has_province_modifier = religious_zeal_at_conv
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			religion = protestant
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			religion = anglican
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			religion = hussite
 		}
 		modifier = {
@@ -586,13 +543,13 @@ reformed_center_of_reformation = {
 			NOT = { continent = FROM }
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 1
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 2
 			}
@@ -604,13 +561,13 @@ reformed_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 4
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.7
 			owner = {
 				num_of_cardinals = 5
 			}
@@ -638,44 +595,7 @@ reformed_center_of_reformation = {
 		modifier = {
 			factor = 0
 			religion = orthodox
-		}
-		modifier = {
-			factor = 0.1
-			OR = {
-				culture_group = latin
-				culture_group = iberian
-				culture = bavarian
-				culture = austrian
-			}
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				culture_group = east_slavic
-				culture_group = south_slavic
-			}
-		}
-		modifier = {
-			factor = 0.7
-			OR = {
-				culture_group = baltic
-				culture_group = british
-				culture_group = carpathian
-				culture_group = west_slavic
-				culture = occitan
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				culture = dutch
-				culture = swiss
-			}
-		}
-		modifier = {
-			factor = 2
-			is_part_of_hre = yes
-		}
+		}		
 		modifier = {
 			factor = 0.5
 			has_state_edict = edict_religion_enforced

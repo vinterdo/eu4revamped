@@ -1,0 +1,262 @@
+# [range_from, range_to[
+
+defender_of_faith_1 = {
+	level = 1
+    range_to = 5
+    modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.1
+		global_missionary_strength = 0.01
+		papal_influence = 0.5
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.10
+		monthly_piety = 0.0005
+    }
+	ai_will_do = {
+		factor = 0.1
+		modifier = {
+			factor = 0.75
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 5
+			tag = SPA
+			religion = catholic
+		}
+		modifier = {
+			factor = 5
+			tag = SWE
+			religion = protestant
+		}
+		modifier = {
+			factor = 5
+			NOT = { has_idea_group = humanist_ideas }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { religion = ROOT }
+			}
+		}
+	}
+}
+
+defender_of_faith_2 = {
+	level = 2
+    range_from = 5
+    range_to = 10
+    modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.1
+		global_missionary_strength = 0.01
+		papal_influence = 0.5
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.10
+		monthly_piety = 0.0005
+		prestige = 0.5
+    }
+	ai_will_do = {
+		factor = 0.2
+		modifier = {
+			factor = 0.75
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 5
+			tag = SPA
+			religion = catholic
+		}
+		modifier = {
+			factor = 5
+			tag = SWE
+			religion = protestant
+		}
+		modifier = {
+			factor = 5
+			NOT = { has_idea_group = humanist_ideas }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { religion = ROOT }
+			}
+		}
+	}
+}
+
+defender_of_faith_3 = {
+	level = 3
+    range_from = 10
+    range_to = 20
+    modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.1
+		global_missionary_strength = 0.01
+		papal_influence = 1
+		monthly_fervor_increase = 1
+		church_power_modifier = 0.15
+		monthly_piety = 0.001
+		prestige = 0.5
+		tolerance_own = 1
+    }
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0.75
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			tag = SPA
+			religion = catholic
+		}
+		modifier = {
+			factor = 5
+			tag = SWE
+			religion = protestant
+		}
+		modifier = {
+			factor = 5
+			NOT = { has_idea_group = humanist_ideas }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { religion = ROOT }
+			}
+		}
+	}
+}
+
+defender_of_faith_4 = {
+	level = 4
+    range_from = 20
+    range_to = 50
+    modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.2
+		global_missionary_strength = 0.01
+		papal_influence = 1
+		monthly_fervor_increase = 1
+		church_power_modifier = 0.15
+		monthly_piety = 0.001
+		prestige = 1
+		manpower_in_true_faith_provinces = 0.1
+    }
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.75
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			tag = SPA
+			religion = catholic
+		}
+		modifier = {
+			factor = 5
+			tag = SWE
+			religion = protestant
+		}
+		modifier = {
+			factor = 5
+			NOT = { has_idea_group = humanist_ideas }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { religion = ROOT }
+			}
+		}
+	}
+}
+
+defender_of_faith_5 = {
+	level = 5
+    range_from = 50
+    modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.2
+		global_missionary_strength = 0.02
+		papal_influence = 1
+		monthly_fervor_increase = 1
+		church_power_modifier = 0.15
+		monthly_piety = 0.001
+		tolerance_own = 1
+		prestige = 1
+		war_exhaustion = -0.02
+		manpower_in_true_faith_provinces = 0.2
+    }
+	same_faith_modifier = {
+		# Applies also on the DoF
+		add_opinion = { who = ROOT modifier = opinion_embraced_counter_reformation }
+	}
+	ai_will_do = {
+		factor = 1.5
+		modifier = {
+			factor = 0.75
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			tag = SPA
+			religion = catholic
+		}
+		modifier = {
+			factor = 5
+			tag = SWE
+			religion = protestant
+		}
+		modifier = {
+			factor = 5
+			NOT = { has_idea_group = humanist_ideas }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { religion = ROOT }
+			}
+		}
+	}
+}

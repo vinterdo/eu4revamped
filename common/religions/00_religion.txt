@@ -182,6 +182,10 @@ christian = {
 						name = "papal_indulgence"
 						duration = 7300
 					}
+					add_legitimacy = 10
+					add_republican_tradition = 5
+					add_devotion = 10
+					add_horde_unity = 10
 				}
 				ai_will_do = {
 					factor = 1
@@ -221,6 +225,7 @@ christian = {
 						name = "usury_forgiven"
 						duration = 7300
 					}
+					add_inflation = -1
 				}
 				ai_will_do = {
 					factor = 1
@@ -275,7 +280,7 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 50
+				cost = 25
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -307,7 +312,7 @@ christian = {
 				}
 				effect = {
 					add_reform_desire = -0.05
-					add_reform_desire_scale = 0.5
+					add_reform_desire_scale = 0.15
 				}
 				ai_will_do = {
 					factor = 0
