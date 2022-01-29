@@ -3,7 +3,7 @@ illius_qui_se_pro_divini = {
         crusades_after_age_limit
     }
 	modifier = {
-		ae_impact = -0.15
+		ae_impact = -0.10
 	}
     trigger = {
         is_papal_controller = yes

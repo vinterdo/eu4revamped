@@ -869,7 +869,7 @@ num_of_marriages = {
 }
 
 num_of_provinces = {
-	monthly_fervor_increase = -0.001
+	monthly_fervor_increase = -0.01
 }
 
 # Multiplied by Development-- Custom defines for IPE:

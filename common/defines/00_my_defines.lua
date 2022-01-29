@@ -6,6 +6,10 @@ NDefines.NCountry.PIETY_INCREASE_AT_GOOD_WAR = 0.33
 NDefines.NCountry.COLONIAL_CLAIM_BONUS = 50
 NDefines.NCountry.COLONIAL_CLAIM_VIOLATION = -35
 
+NDefines.NCountry.PROVOKE_REVOLT_SIZE_FACTOR = 0.7 -- Extra strength of revolt when using provoke revolt
+NDefines.NCountry.PROVOKE_REVOLT_MIN_PROGRESS = 30.0	-- Minimum revolt progress to use provoke
+NDefines.NCountry.MAX_FERVOR = 200.0
+
 NDefines.NMilitary.DAYS_PER_PHASE = 3 -- from 3, to dramatically increase realism of battles
 
 NDefines.NAI.ACCEPTABLE_BALANCE_DEFAULT = 1.3 -- from 1.7, to encourage AI to be more aggressive in pursuing battle

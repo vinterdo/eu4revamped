@@ -253,7 +253,7 @@ invite_to_trade_league = {
 
 call_crusade_action = {
 	condition = {
-		tooltip = CRUSADE_NOT_VALID
+		tooltip = CRUSADE_NOT_OWN_JER
 		potential = {
 		}
 		allow = {
