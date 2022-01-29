@@ -1,0 +1,8 @@
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = PAP
+		}
+	}
+	clr_global_flag = crusades_on
+}

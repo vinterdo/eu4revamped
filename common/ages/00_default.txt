@@ -6,7 +6,7 @@ age_of_discovery = {
 	}
 	
 	papacy = 1.0
-	
+	religious_conflicts = yes
 
 	objectives = {
 		obj_discover_america = {
@@ -247,6 +247,8 @@ age_of_reformation = {
 	
 	
 	papacy = 1.25
+	religious_conflicts = yes
+	
 	
 	objectives = {
 		obj_christian_convert = {

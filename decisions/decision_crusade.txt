@@ -1,0 +1,104 @@
+country_decisions = {
+	AStartCrusade = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = PAP
+				}
+				NOT = {
+					OR = {
+						379 = { owner = { religion_group = christian } }
+						has_global_flag = crusades_on
+					}
+				}
+			}
+		}
+		allow = {
+			treasury = 1000
+			curia_treasury_size = 3000
+			NOT = {
+				379 = { owner = { OR = { truce_with = ROOT alliance_with = ROOT } } }
+			}
+		}
+		effect = {
+			set_global_flag = crusades_on
+			add_curia_treasury = -3000
+			add_treasury = -1000
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	AJoinCrusade = {
+		major = yes
+		potential = {
+			AND = {
+				has_global_flag = crusades_on
+				religion = catholic
+				NOT = {
+					tag = PAP
+				}
+				NOT = { has_country_flag = join_crusade }
+			}
+		}
+		allow = {
+			NOT = {
+				379 = { owner = { OR = { truce_with = ROOT alliance_with = ROOT } } }
+			}
+		}
+		effect = {
+			set_country_flag = join_crusade
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.1
+				is_at_war = yes
+			}
+		}
+	}
+	ACrusadeDeusVult = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = PAP
+				}
+				NOT = { 379 = { owner = { religion_group = christian } } }
+				has_global_flag = crusades_on
+			}
+		}
+		allow = {
+			is_at_war = false
+			any_country = {
+				has_country_flag = join_crusade
+			}
+			NOT = {
+				379 = { owner = { OR = { truce_with = ROOT alliance_with = ROOT } } }
+			}
+			crusade_target = {
+				exists = yes
+			}
+		}
+		effect = {
+			declare_war_with_cb = {
+				who = crusade_target
+				casus_belli = cb_crusade
+			}
+			every_country = {
+				limit = {
+					has_country_flag = join_crusade
+				}
+				join_all_offensive_wars_of = PAP
+				clr_country_flag = join_crusade
+			}
+			clr_global_flag = crusades_on
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

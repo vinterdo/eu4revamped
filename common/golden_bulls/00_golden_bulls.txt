@@ -2,14 +2,16 @@ illius_qui_se_pro_divini = {
     mechanics = {
         crusades_after_age_limit
     }
-	modifier = {
+    modifier = {
 		ae_impact = -0.10
+        core_creation = -0.10
+        nobles_loyalty_modifier = 0.1
 	}
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 3
+        factor = 2
     }
 }
 
@@ -21,7 +23,7 @@ apostolicae_servitutis = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 2
     }
 }
 
@@ -53,7 +55,7 @@ immensa_aeterni_dei = {
     ai_will_do = {
         factor = 0
         modifier = {
-            factor = 5
+            factor = 6
             is_lacking_institutions = yes
         }
     }

@@ -260,4 +260,12 @@ call_crusade_action = {
 			from = { owns = 379 }
 		}
 	}
+	condition = {
+		tooltip = CRUSADE_NOT_DECLARED
+		potential = {
+		}
+		allow = {
+			has_global_flag = crusades_on
+		}
+	}
 }
